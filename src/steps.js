@@ -1,10 +1,21 @@
 import { object, string } from 'yup'
 
+import Instrucciones from './views/Instrucciones'
 import CompanyInfo from './views/CompanyInfo'
 import PersonalInfo from './views/PersonalInfo'
 import Summary from './views/Summary'
 
 export default [
+  {
+    id: 'instruccion',
+    component: Instrucciones,
+    initialValues: {
+      area: ""
+    },
+    validationSchema: object().shape({
+      area: string().required(),
+    }),
+  },
   {
     id: 'personal',
     component: PersonalInfo,

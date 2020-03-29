@@ -1,6 +1,8 @@
 import FormikWizard from 'formik-wizard'
 import React from 'react'
 import ReactDOM from "react-dom";
+import "./styles.css";
+import "./styles-custom.css";
 
 import steps from './steps'
 
@@ -22,10 +24,10 @@ function FormWrapper({
       )}
       <div>
         <button type="button" onClick={goToPreviousStep} disabled={!canGoBack}>
-          Previous
+          Anterior
         </button>
         <button type="submit">
-          {actionLabel || (isLastStep ? 'Submit' : 'Next step')}
+          {actionLabel || (isLastStep ? 'Submit' : 'Siguiente')}
         </button>
       </div>
       <hr />
