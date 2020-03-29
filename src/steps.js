@@ -1,6 +1,7 @@
 import { object, string } from 'yup'
 
 import Instrucciones from './views/Instrucciones'
+import PersonasCercanas from './views/PersonasCercanas'
 import CompanyInfo from './views/CompanyInfo'
 import PersonalInfo from './views/PersonalInfo'
 import Summary from './views/Summary'
@@ -11,11 +12,15 @@ export default [
     id: 'instruccion',
     component: Instrucciones,
     initialValues: {
-      area: ""
+      area: '',
     },
-    validationSchema: object().shape({
-      area: string().required(),
-    }),
+  },
+  {
+    id: 'personasCercanas',
+    component: PersonasCercanas,
+    initialValues: {
+      jefe: '',
+    },
   },
   {
     id: 'personal',
