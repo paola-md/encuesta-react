@@ -5,6 +5,7 @@ import CompanyInfo from './views/CompanyInfo'
 import PersonalInfo from './views/PersonalInfo'
 import Summary from './views/Summary'
 
+
 export default [
   {
     id: 'instruccion',
