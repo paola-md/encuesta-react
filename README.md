@@ -11,6 +11,15 @@ npm install @emotion/core --save
 
 npm install @emotion/styled --save
 
+//Para multi-pagina
+
+npm install react-albus --save
+
+npm install formik-wizard --save
+
+npm install immer --save
+
+
 
 ### ¿Cómo lo debes correr?
 git clone https://github.com/paola-md/encuesta-react/
