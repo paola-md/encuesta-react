@@ -1,4 +1,4 @@
-¿Cómo lo cree?
+### ¿Cómo lo cree?
 npm install -g create-react-app
 npx create-react-app pruebasebas
 npm install formik --save
@@ -6,16 +6,17 @@ npm install yup --save
 npm install @emotion/core --save
 npm install @emotion/styled --save
 
-¿Cómo lo debes correr?
-git clone
+### ¿Cómo lo debes correr?
+git clone https://github.com/paola-md/encuesta-react/
+cd encuesta-react
 npm install
 npm start
 
-¿De dónde lo saqué?
+### ¿De dónde lo saqué?
 https://www.w3schools.com/react/default.asp
 https://jaredpalmer.com/formik/docs/tutorial
 
-¿Pasos futuros?
+### ¿Pasos futuros?
 https://github.com/jaredpalmer/formik/tree/master/examples
 
 
