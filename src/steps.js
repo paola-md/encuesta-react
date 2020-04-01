@@ -32,6 +32,7 @@ export default [
     id: 'adivina1',
     component: Adivina1,
     initialValues: {
+      salary_jefe: '',
     },
   },
   {

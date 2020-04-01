@@ -1,5 +1,7 @@
 import { useFormikWizard } from 'formik-wizard'
 import React from 'react'
+import SalarySlider from './../components/SalarySlider';
+import { Formik, Form, Field,FastField, useFormikContext } from "formik";
 
 function Adivina1() {
   const { values } = useFormikWizard()
@@ -15,6 +17,8 @@ function Adivina1() {
       <p></p>
       <div>
       <b>Jefe {values.personasCercanas.nom_jefe} </b>
+      <Field name='salary_jefe' component={SalarySlider} label="Salary"
+      />
       </div>
     </div>
 

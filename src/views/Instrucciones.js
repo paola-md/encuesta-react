@@ -25,8 +25,6 @@ function Instrucciones() {
           textFieldProps={{ fullWidth: true, margin: 'normal', variant: 'outlined' }}
         />
 
-        <Field name='salary' component={SalarySlider} label="Salary"
-        />
       </div>
 
 
