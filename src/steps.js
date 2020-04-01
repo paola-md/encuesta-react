@@ -15,7 +15,7 @@ export default [
     component: Instrucciones,
     initialValues: {
       area: '',
-      owner:''
+      salary:''
     },
   },
   {

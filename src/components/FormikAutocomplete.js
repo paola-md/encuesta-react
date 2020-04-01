@@ -12,6 +12,7 @@ const FormikAutocomplete = ({ textFieldProps, ...props }) => {
 
   return (
     <Autocomplete
+      freeSolo
       {...props}
       {...field}
       onChange={ (_, value) => setFieldValue(name, value) }
