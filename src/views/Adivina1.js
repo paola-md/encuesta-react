@@ -16,12 +16,26 @@ function Adivina1() {
       <p>En promedio ¿Cuánto cree que ganaron sus 5 compañeros más cercanos y su jefe en marzo de 2019?</p>
       <p></p>
       <div>
-      <b>Jefe {values.personasCercanas.nom_jefe} </b>
-      <Field name='salary_jefe' component={SalarySlider} label="Salary"
-      />
+      <b>Jefe: {values.personasCercanas.nom_jefe} </b>
+      <Field name='salary_jefe' component={SalarySlider} label="Salary"/>
+      <p></p>
+      <b>Persona 1: {values.personasCercanas.nom_p1} </b>
+      <Field name='salary_p1' component={SalarySlider} label="Salary"/>
+      <p></p>
+      <b>Persona 2: {values.personasCercanas.nom_p2} </b>
+      <Field name='salary_p1' component={SalarySlider} label="Salary"/>
+      <p></p>
+      <b>Persona 3: {values.personasCercanas.nom_p3} </b>
+      <Field name='salary_p1' component={SalarySlider} label="Salary"/>
+      <p></p>
+      <b>Persona 4: {values.personasCercanas.nom_p4} </b>
+      <Field name='salary_p1' component={SalarySlider} label="Salary"/>
+      <p></p>
+      <b>Persona 5: {values.personasCercanas.nom_p5} </b>
+      <Field name='salary_p1' component={SalarySlider} label="Salary"/>
+      <p></p>
       </div>
     </div>
-
 
   )
 }

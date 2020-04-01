@@ -19,14 +19,65 @@ function PersonasCercanas() {
 
       <div>
       <b>Jefe</b>
-      <Field name='nom_jefe' component={FormikAutocomplete} label="Nombre"
+      <Field name='nom_jefe' component={FormikAutocomplete}
         options={TRABAJADORES}
-        textFieldProps={{ fullWidth: true, margin: 'normal', variant: 'outlined' }}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"Nombre", variant: 'outlined' }}
       />
       <Field name='div_jefe' component={FormikAutocomplete} label="División"
         options={ DIVISIONES}
-        textFieldProps={{ fullWidth: true, margin: 'normal', variant: 'outlined' }}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"División", variant: 'outlined' }}
       />
+
+      <b>Primera persona más cercana</b>
+      <Field name='nom_p1' component={FormikAutocomplete}
+        options={TRABAJADORES}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"Nombre", variant: 'outlined' }}
+      />
+      <Field name='div_p1' component={FormikAutocomplete} label="División"
+        options={ DIVISIONES}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"División", variant: 'outlined' }}
+      />
+
+      <b>Segunda persona más cercana</b>
+      <Field name='nom_p2' component={FormikAutocomplete}
+        options={TRABAJADORES}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"Nombre", variant: 'outlined' }}
+      />
+      <Field name='div_p2' component={FormikAutocomplete} label="División"
+        options={ DIVISIONES}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"División", variant: 'outlined' }}
+      />
+
+      <b>Tercera persona más cercana</b>
+      <Field name='nom_p3' component={FormikAutocomplete}
+        options={TRABAJADORES}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"Nombre", variant: 'outlined' }}
+      />
+      <Field name='div_p3' component={FormikAutocomplete} label="División"
+        options={ DIVISIONES}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"División", variant: 'outlined' }}
+      />
+
+      <b>Cuarta persona más cercana</b>
+      <Field name='nom_p4' component={FormikAutocomplete}
+        options={TRABAJADORES}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"Nombre", variant: 'outlined' }}
+      />
+      <Field name='div_p4' component={FormikAutocomplete} label="División"
+        options={ DIVISIONES}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"División", variant: 'outlined' }}
+      />
+
+      <b>Quinta persona más cercana</b>
+      <Field name='nom_p5' component={FormikAutocomplete}
+        options={TRABAJADORES}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"Nombre", variant: 'outlined' }}
+      />
+      <Field name='div_p5' component={FormikAutocomplete} label="División"
+        options={ DIVISIONES}
+        textFieldProps={{ fullWidth: true, margin: 'normal', label:"División", variant: 'outlined' }}
+      />
+
 
 
       </div>

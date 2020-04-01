@@ -5,28 +5,24 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 100,
+    width: 300,
+    justifyContent:'center',
+    alignItems:'center',
   },
   margin: {
     height: theme.spacing(3),
+    width: theme.spacing(10),
   },
 }));
 
+
 const marks = [
   {
-    value: 0,
-    label: 'Salario Minimo',
+    value: 5,
+    label: 'Salario minimo',
   },
   {
-    value: 20,
-    label: '20 MXN',
-  },
-  {
-    value: 37,
-    label: '37 MXN',
-  },
-  {
-    value: 100,
+    value: 105,
     label: 'Salario Presidente',
   },
 ];
@@ -42,18 +38,25 @@ const SalarySlider = ({ textFieldProps, ...props }) => {
   const { name } = field;
 
   return (
-    <Slider
-      {...props}
-      {...field}
-      defaultValue={20}
-      getAriaValueText={valuetext}
-      aria-labelledby="discrete-slider-custom"
-      step={10}
-      valueLabelDisplay="auto"
-      marks={marks}
-      onChange={ (_, value) => setFieldValue(name, value) }
-      onBlur={ () => setTouched({ [name]: true }) }
-    />
+    <div className={classes.root}>
+      <Typography id="discrete-slider-custom" gutterBottom>
+      Salario en miles de pesos Mexicanos
+      </Typography>
+      <Slider
+        {...props}
+        {...field}
+        defaultValue={10}
+        getAriaValueText={valuetext}
+        aria-labelledby="discrete-slider-custom"
+        step={15}
+        min = {5}
+        max = {105}
+        valueLabelDisplay="auto"
+        marks={marks}
+        onChange={ (_, value) => setFieldValue(name, value) }
+        onBlur={ () => setTouched({ [name]: true }) }
+      />
+     </div>
   );
 }
 
