@@ -1,30 +1,36 @@
 import { Formik, Form, Field,FastField, useFormikContext } from "formik";
 import React from 'react'
+import FormikWizard from 'formik-wizard'
 import { Autocomplete } from "@material-ui/lab";
 import { Grid, TextField } from "@material-ui/core";
-
+import { useFormikWizard } from 'formik-wizard'
+import FormikAutocomplete from './../components/FormikAutocomplete';
 
 function PersonasCercanas() {
 
+  const { values } = useFormikWizard()
   return (
     <div>
-      <h2>Pregunta 1</h2>
-      <p>Hagamos el siguiente ejercicio. Quieres adivinar el salario mensual de 5 de tus compañeros de trabajo (con los que tienes una relación laboral más cercana).</p>
+      <h2>Pregunta 1 </h2>
+      <p>Hagamos el siguiente ejercicio. Quiere adivinar el salario mensual de 5 de sus compañeros de trabajo (con los que tiene una relación laboral más cercana).</p>
       <p></p>
-      <p>Escribe el nombre de las cinco personas con las que trabaja más de cerca y en qué división están (en caso de que la divisón no aparezca, por favor marca la opción "OTRO", y escribe su nombre) </p>
+      <p>Escribe el nombre de su jefe y las cinco personas con las que trabaja más de cerca y en qué división están (en caso de que la divisón no aparezca, por favor marca la opción "OTRO", y escribe su nombre) </p>
 
       <div>
-        <Autocomplete
-          id="jefe"
-          name="jefe"
-          options={trabajadores}
-          renderInput={params => (
-            <TextField
-              {...params}
-              label="Nombre Jefe"
-              variant="outlined"
-              fullWidth
-            /> )} />
+      <b>Jefe</b>
+      <Field name='nom_jefe' component={FormikAutocomplete} label="Nombre"
+        options={trabajadores}
+        textFieldProps={{ fullWidth: true, margin: 'normal', variant: 'outlined' }}
+      />
+      </div>
+
+      <div>
+      <p></p>
+      <b>Persona 1</b>
+        <Autocomplete id="per1"  name="per1"  options={trabajadores}
+          renderInput={params => (<TextField  {...params} label="Nombre persona 1" variant="outlined" fullWidth /> )} />
+        <Autocomplete id="per1_div"  name="per1_div"  options={trabajadores}
+          renderInput={params => (<TextField  {...params} label="Division persona 1" variant="outlined" fullWidth /> )} />
       </div>
 
 

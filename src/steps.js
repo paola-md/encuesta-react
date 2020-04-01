@@ -2,6 +2,8 @@ import { object, string } from 'yup'
 
 import Instrucciones from './views/Instrucciones'
 import PersonasCercanas from './views/PersonasCercanas'
+import Adivina1 from './views/Adivina1'
+
 import CompanyInfo from './views/CompanyInfo'
 import PersonalInfo from './views/PersonalInfo'
 import Summary from './views/Summary'
@@ -13,13 +15,23 @@ export default [
     component: Instrucciones,
     initialValues: {
       area: '',
+      owner:''
     },
   },
   {
     id: 'personasCercanas',
     component: PersonasCercanas,
     initialValues: {
-      jefe: '',
+      nom_jefe: '',
+      jefe_div:'',
+      per1:'',
+      per1_div:''
+    },
+  },
+  {
+    id: 'adivina1',
+    component: Adivina1,
+    initialValues: {
     },
   },
   {

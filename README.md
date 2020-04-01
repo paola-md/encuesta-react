@@ -19,7 +19,7 @@ npm install formik-wizard --save
 
 npm install immer --save
 
-
+npm install formik-material-ui --save
 
 ### ¿Cómo lo debes correr?
 git clone https://github.com/paola-md/encuesta-react/
