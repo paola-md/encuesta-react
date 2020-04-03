@@ -17,11 +17,11 @@ const useStyles = makeStyles((theme) => ({
 const marks = [
   {
     value: 5,
-    label: 'Salario minimo',
+    label: '5,000 MXN',
   },
   {
     value: 105,
-    label: 'Salario Presidente',
+    label: '105,000 MXN',
   },
 ];
 
@@ -44,7 +44,7 @@ const SalarySlider = ({ textFieldProps, ...props }) => {
         defaultValue={10}
         getAriaValueText={valuetext}
         aria-labelledby="discrete-slider-custom"
-        step={15}
+        step={1}
         min = {5}
         max = {105}
         valueLabelDisplay="auto"

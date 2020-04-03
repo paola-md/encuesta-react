@@ -124,7 +124,7 @@ export default [
       salary_p10: '',
     },
     validationSchema: object().shape({
-      salary_p10: number().required(),
+      salary_p10: number().required().min(3000).max(105000),
     }),
   },
   {

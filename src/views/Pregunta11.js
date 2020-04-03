@@ -13,7 +13,7 @@ function Pregunta11() {
     <div>
       <h2>Pregunta 11</h2>
 
-      <p>En la pregunta anterior, reportaste que crees que el salario mensual promedio para marzo de 2019 para los empleados con un cargo similar al tuyo fue de XX MXN.</p>
+      <p>En la pregunta anterior, reportaste que crees que el salario mensual promedio para marzo de 2019 para los empleados con un cargo similar al tuyo fue de {base} MXN.</p>
       <p>La siguiente pregunta está diseñada para evaluar qué tan seguro te sientes acerca de tu respuesta anterior ¿Con cuál probabilidad crees que el salario promedio verdadero caiga dentro de las siguientes categorías?</p>
       <p></p>
 

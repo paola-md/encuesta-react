@@ -11,7 +11,7 @@ function Pregunta05() {
 
       <p>Antes de seguir con la encuesta, vamos a introducir un nuevo tipo de pregunta. Supongamos que estás jugando el siguiente juego: una moneda es lanzada, y debes adivinar si cae águila o sol. Si adivinas qué cara salió, ganas <b>1000 MXN</b>, de lo contrario, ganas <b>0 MXN</b>. Nota que el valor esperado de la ganancia de este juego es de <b>500 MXN</b>.</p>
       <p></p>
-      <p>Dado lo anterior, <b>¿Cuál es la máxima cantidad que estarías dispuesto a pagar por esta información?</b> </p>
+      <p>Dado lo anterior, <b>¿Cuál es la máxima cantidad que estarías dispuesto a pagar la información de qué cara salió?</b> </p>
       <p></p>
 
      <Field name='pago_p5' component={MoneySlider}/>
