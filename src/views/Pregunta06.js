@@ -1,13 +1,10 @@
-import { useFormikWizard } from 'formik-wizard'
 import React from 'react'
 import  ProbSlider from './../components/ProbSlider';
-import { Formik, Form, Field,FastField, useFormikContext } from "formik";
+import { Field } from "formik";
 
 
 
 function Pregunta06() {
-  const { values } = useFormikWizard()
-
   return (
     <div>
       <h2>Pregunta 6</h2>
@@ -19,8 +16,6 @@ function Pregunta06() {
 
      <Field name='prob_p6' component={ProbSlider}/>
      <p></p><p></p>
-
-
     </div>
 
   )

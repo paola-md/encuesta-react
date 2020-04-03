@@ -1,8 +1,5 @@
-import { Formik, Form, Field,FastField, useFormikContext } from "formik";
+import { Field } from "formik";
 import React from 'react'
-import FormikWizard from 'formik-wizard'
-import { Autocomplete } from "@material-ui/lab";
-import { Grid, TextField } from "@material-ui/core";
 import { useFormikWizard } from 'formik-wizard'
 import FormikAutocomplete from './../components/FormikAutocomplete';
 import { DIVISIONES, TRABAJADORES  } from './../constants';
@@ -13,7 +10,7 @@ function PersonasCercanas() {
   return (
     <div>
       <h2>Pregunta 1 {values.instruccion.salary} </h2>
-      
+
       <p>Escribe el nombre de su jefe y las cinco personas con las que trabaja más de cerca y en qué división están (en caso de que la divisón no aparezca, por favor escribe su nombre) </p>
 
       <div>

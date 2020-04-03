@@ -2,8 +2,7 @@ import { useFormikWizard } from 'formik-wizard'
 import React from 'react'
 
 function CompanyInfo() {
-  const { values } = useFormikWizard()
-
+  
   return (
     <div>
       <h1>Fin de la encuesta</h1>

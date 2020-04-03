@@ -1,13 +1,10 @@
-import { useFormikWizard } from 'formik-wizard'
 import React from 'react'
 import  MoneySlider from './../components/MoneySlider';
-import { Formik, Form, Field,FastField, useFormikContext } from "formik";
+import { Field } from "formik";
 
 
 
 function Pregunta05() {
-  const { values } = useFormikWizard()
-
   return (
     <div>
       <h2>Pregunta 5</h2>

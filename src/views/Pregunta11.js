@@ -1,17 +1,15 @@
 import { useFormikWizard } from 'formik-wizard'
 import React from 'react'
-import { FastField, useFormikContext, Field} from "formik";
+import { Field} from "formik";
 import  ProbSlider from './../components/ProbSlider';
 
 
 function Pregunta11() {
   const { values } = useFormikWizard();
-  const { errors, touched } = useFormikContext()
   const base = values.preg10.salary_p10;
   const menos_10 = Math.round(base*0.9);
   const mas_10 = Math.round(base*1.1);
-  const menos = values.preg11.prob_p11_menos
-  return (
+ return (
     <div>
       <h2>Pregunta 11</h2>
 

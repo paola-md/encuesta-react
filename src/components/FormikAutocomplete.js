@@ -3,6 +3,14 @@ import { Autocomplete } from '@material-ui/lab';
 import { TextField } from '@material-ui/core';
 import { fieldToTextField } from 'formik-material-ui';
 
+function validateEntry(value) {
+  let error;
+  if (!value) {
+    error = 'Required';
+  }
+  return error;
+}
+
 
 const FormikAutocomplete = ({ textFieldProps, ...props }) => {
 
@@ -11,6 +19,7 @@ const FormikAutocomplete = ({ textFieldProps, ...props }) => {
   const { name } = field;
 
   return (
+    <div>
     <Autocomplete
       freeSolo
       {...props}
@@ -21,6 +30,7 @@ const FormikAutocomplete = ({ textFieldProps, ...props }) => {
         <TextField {...props} {...textFieldProps} helperText={helperText} error={error} />
       )}
     />
+    </div>
   );
 }
 

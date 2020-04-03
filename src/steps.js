@@ -14,8 +14,6 @@ import Pregunta10 from  './views/Pregunta10'
 import Pregunta11 from  './views/Pregunta11'
 import Pregunta12 from  './views/Pregunta12'
 
-import CompanyInfo from './views/CompanyInfo'
-import PersonalInfo from './views/PersonalInfo'
 import Summary from './views/Summary'
 
 
@@ -25,7 +23,6 @@ export default [
     component: Instrucciones,
     initialValues: {
       area: '',
-      salary:'',
     },
   },
   {

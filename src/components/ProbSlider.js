@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField, Slider,Typography } from '@material-ui/core';
+import { Slider,Typography } from '@material-ui/core';
 import { fieldToTextField } from 'formik-material-ui';
 import { makeStyles } from '@material-ui/core/styles';
 

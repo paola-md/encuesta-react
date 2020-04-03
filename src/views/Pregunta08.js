@@ -1,7 +1,7 @@
 import { useFormikWizard } from 'formik-wizard'
 import React from 'react'
 import  ProbSlider from './../components/ProbSlider';
-import { Formik, Form, Field,FastField, useFormikContext } from "formik";
+import { Field } from "formik";
 
 
 

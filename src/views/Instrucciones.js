@@ -1,23 +1,17 @@
-import { Formik, Form, Field,FastField, useFormikContext } from "formik";
+import { Field} from "formik";
 import React from 'react'
-import { Autocomplete } from "@material-ui/lab";
-import { Grid, TextField } from "@material-ui/core";
 import FormikAutocomplete from './../components/FormikAutocomplete';
-import SalarySlider from './../components/SalarySlider';
-import { useFormikWizard } from 'formik-wizard'
 import { DIVISIONES } from './../constants';
-import Typography from '@material-ui/core/Typography';
 
 
 function Instrucciones() {
-  const { values } = useFormikWizard()
 
   return (
     <div>
       <h1>Encuesta de salarios de la CDMX</h1>
       <b>Las respuestas de esta encuesta no serán compartidas con tu jefe y/o compañeros de trabajo.</b>
       <p></p>
-      <p>Tienes 3 minutos para responder estas preguntas. Comienza indicando tu área de trabajo</p>
+      <p>Tienes 1 minutos para responde cada pregunta. Comienza indicando tu área de trabajo</p>
       <p></p>
 
       <div>

@@ -1,7 +1,7 @@
 import { useFormikWizard } from 'formik-wizard'
 import React from 'react'
 import SalarySlider from './../components/SalarySlider';
-import { Formik, Form, Field,FastField, useFormikContext } from "formik";
+import {Field } from "formik";
 
 function Adivina1() {
   const { values } = useFormikWizard()

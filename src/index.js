@@ -18,6 +18,21 @@ import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 
+import Countdown from 'react-countdown';
+
+// Random component
+const Completionist = () => <span>  TIEMPO TERMINADO  </span>;
+
+// Renderer callback with condition
+const renderer = ({ hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a completed state
+    return <Completionist />;
+  } else {
+    // Render a countdown
+    return <span>{hours}:{minutes}:{seconds}</span>;
+  }
+};
 
 
 function Copyright() {
@@ -36,6 +51,10 @@ function Copyright() {
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: 'relative',
+  },
+  timer:{
+    fontSize: "1rem",
+    textAlign: "right"
   },
   layout: {
     width: 'auto',
@@ -76,6 +95,7 @@ function FormWrapper({
   isLastStep,
   status,
   goToPreviousStep,
+  goToNextStep,
   canGoBack,
   actionLabel,
 })
@@ -87,9 +107,15 @@ function FormWrapper({
        <AppBar position="absolute" color="default" className={classes.appBar}>
          <Toolbar>
            <Typography variant="h6" color="inherit" noWrap>
-             Encuesta de salarios de la CDMX
-           </Typography>
+             Encuesta de salarios de la CDMX        [
+           <Countdown  className={classes.timer}
+            date={Date.now() + 6000}
+            renderer={renderer} onComplete ={goToNextStep}
+             />
+            </Typography>
+          ]
          </Toolbar>
+
        </AppBar>
        <main className={classes.layout}>
          <Paper className={classes.paper}>
