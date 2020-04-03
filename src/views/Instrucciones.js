@@ -6,7 +6,7 @@ import FormikAutocomplete from './../components/FormikAutocomplete';
 import SalarySlider from './../components/SalarySlider';
 import { useFormikWizard } from 'formik-wizard'
 import { DIVISIONES } from './../constants';
-
+import Typography from '@material-ui/core/Typography';
 
 
 function Instrucciones() {

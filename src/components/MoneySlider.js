@@ -5,13 +5,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 300,
+    width: 450,
     justifyContent:'center',
     alignItems:'center',
-  },
-  margin: {
-    height: theme.spacing(3),
-    width: theme.spacing(10),
+    padding: "0px 0px 0px 100px"
   },
 }));
 

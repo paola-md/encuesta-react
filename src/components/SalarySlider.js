@@ -5,13 +5,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 300,
+    width: 400,
     justifyContent:'center',
     alignItems:'center',
-  },
-  margin: {
-    height: theme.spacing(3),
-    width: theme.spacing(10),
+    padding: "0px 0px 0px 0px",
+    textAlign: "center",
   },
 }));
 
@@ -38,10 +36,8 @@ const SalarySlider = ({ textFieldProps, ...props }) => {
   const { name } = field;
 
   return (
+    <div  align="center">
     <div className={classes.root}>
-      <Typography id="discrete-slider-custom" gutterBottom>
-      Salario en miles de pesos Mexicanos
-      </Typography>
       <Slider
         {...props}
         {...field}
@@ -57,6 +53,8 @@ const SalarySlider = ({ textFieldProps, ...props }) => {
         onBlur={ () => setTouched({ [name]: true }) }
       />
      </div>
+     <small >Salario en miles de pesos Mexicanos</small>
+      </div>
   );
 }
 
