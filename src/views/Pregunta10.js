@@ -1,5 +1,5 @@
 import React from 'react'
-import {  useFormikContext } from "formik";
+import { FastField, useFormikContext } from "formik";
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
@@ -26,11 +26,9 @@ function Pregunta10() {
       <div className={classes.root} >
         <b>Salario mensual promedio</b>
         <p></p>
-        <TextField name="salary_p10" id="salary_p10" variant="outlined" />
+        <FastField name="salary_p10" id="salary_p10" variant="outlined" />
       </div>
-      <small style={{ color: 'red' }}>
-        {touched.salary_p10 && errors.salary_p10}
-      </small>
+
       </div>
 
     </div>

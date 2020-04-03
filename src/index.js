@@ -109,8 +109,8 @@ function FormWrapper({
            <Typography variant="h6" color="inherit" noWrap>
              Encuesta de salarios de la CDMX        [
            <Countdown  className={classes.timer}
-            date={Date.now() + 6000}
-            renderer={renderer} onComplete ={goToNextStep}
+            date={Date.now() + 60000}
+            renderer={renderer} onComplete ={goToPreviousStep}
              />
             </Typography>
           ]

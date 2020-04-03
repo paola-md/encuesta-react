@@ -11,7 +11,7 @@ function Instrucciones() {
       <h1>Encuesta de salarios de la CDMX</h1>
       <b>Las respuestas de esta encuesta no serán compartidas con tu jefe y/o compañeros de trabajo.</b>
       <p></p>
-      <p>Tienes 1 minutos para responde cada pregunta. Comienza indicando tu área de trabajo</p>
+      <p>Tienes 1 minuto para responde cada pregunta. Comienza indicando tu área de trabajo</p>
       <p></p>
 
       <div>

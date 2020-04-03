@@ -1,4 +1,4 @@
-import { object, string, number } from 'yup'
+import { object, string, number, mixed } from 'yup'
 
 import Instrucciones from './views/Instrucciones'
 import PersonasCercanas from './views/PersonasCercanas'
@@ -24,16 +24,42 @@ export default [
     initialValues: {
       area: '',
     },
+    validationSchema: object().shape({
+      area: string().required(),
+    })
   },
   {
     id: 'personasCercanas',
     component: PersonasCercanas,
     initialValues: {
       nom_jefe: '',
-      jefe_div:'',
-      per1:'',
-      per1_div:''
+      div_jefe:'',
+      nom_p1: '',
+      div_p1:'',
+      nom_p2: '',
+      div_p2:'',
+      nom_p3: '',
+      div_p3:'',
+      nom_p4: '',
+      div_p4:'',
+      nom_p5: '',
+      div_p5:'',
     },
+    validationSchema: object().shape({
+      nom_jefe: string().required(),
+      div_jefe: string().required(),
+      nom_p1: string().required(),
+      div_p1: string().required(),
+      nom_p2: string().required(),
+      div_p2: string().required(),
+      nom_p3: string().required(),
+      div_p3: string().required(),
+      nom_p4: string().required(),
+      div_p4: string().required(),
+      nom_p5: string().required(),
+      div_p5: string().required(),
+
+    })
   },
   {
     id: 'adivina1',
@@ -122,6 +148,9 @@ export default [
       p12_bin2: '',
       p12_bin3: ''
     },
+    validationSchema: object().shape({
+      p12_bin1: string().required(),
+    }),
   },
   {
     id: 'summary',
