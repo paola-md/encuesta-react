@@ -3,6 +3,9 @@ import { object, string } from 'yup'
 import Instrucciones from './views/Instrucciones'
 import PersonasCercanas from './views/PersonasCercanas'
 import Adivina1 from './views/Adivina1'
+import AdivinaOracion from './views/AdivinaOracion'
+import Pregunta4 from  './views/Pregunta4'
+import Pregunta5 from  './views/Pregunta5'
 
 import CompanyInfo from './views/CompanyInfo'
 import PersonalInfo from './views/PersonalInfo'
@@ -15,7 +18,7 @@ export default [
     component: Instrucciones,
     initialValues: {
       area: '',
-      salary:''
+      salary:'',
     },
   },
   {
@@ -33,6 +36,27 @@ export default [
     component: Adivina1,
     initialValues: {
       salary_jefe: '',
+    },
+  },
+  {
+    id: 'adivinaOracion',
+    component: AdivinaOracion,
+    initialValues: {
+      frase: '',
+    },
+  },
+  {
+    id: 'preg4',
+    component: Pregunta4,
+    initialValues: {
+      pago_p4: '',
+    },
+  },
+  {
+    id: 'preg5',
+    component: Pregunta5,
+    initialValues: {
+      pago_p5: '',
     },
   },
   {

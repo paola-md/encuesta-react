@@ -13,9 +13,8 @@ function PersonasCercanas() {
   return (
     <div>
       <h2>Pregunta 1 {values.instruccion.salary} </h2>
-      <p>Hagamos el siguiente ejercicio. Quiere adivinar el salario mensual de 5 de sus compañeros de trabajo (con los que tiene una relación laboral más cercana).</p>
-      <p></p>
-      <p>Escribe el nombre de su jefe y las cinco personas con las que trabaja más de cerca y en qué división están (en caso de que la divisón no aparezca, por favor marca la opción "OTRO", y escribe su nombre) </p>
+      
+      <p>Escribe el nombre de su jefe y las cinco personas con las que trabaja más de cerca y en qué división están (en caso de que la divisón no aparezca, por favor escribe su nombre) </p>
 
       <div>
       <b>Jefe</b>

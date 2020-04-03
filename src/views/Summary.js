@@ -7,7 +7,7 @@ function CompanyInfo() {
   return (
     <div>
       <h1>Is this information correct?</h1>
-      <p>User name: {values.personal.userName}</p>
+      <p>User name: {values.adivinaOracion.frase}</p>
       <p>Company name: {values.company.companyName}</p>
     </div>
   )

@@ -1,21 +1,22 @@
 import { useFormikWizard } from 'formik-wizard'
 import React from 'react'
 import SalarySlider from './../components/SalarySlider';
+import RandomPhrases from './../components/RandomPhrases';
 import { Formik, Form, Field,FastField, useFormikContext } from "formik";
+import { RANDINT, FRASES } from './../constants';
 
-function Adivina1() {
+
+function AdivinaOracion() {
   const { values } = useFormikWizard()
+
 
   return (
     <div>
-      <h2>Pregunta 2</h2>
+      <h2>Pregunta 3</h2>
+
       <p></p>
-      <p>Hagamos el siguiente ejercicio. Quiere adivinar el salario mensual de su jefe y de sus cinco compañeros de trabajo (con los que tiene una relación laboral más cercana).</p>
-      <p></p>
-      <p>En este ejercicio tendremos las siguientes reglas: Si tu predicción promedio del salario no se desvía más del 5% del valor real recibirás un premio monetario.</p>
-      <p>Tus 5 compañeros también realizarán ejercicio, y quien obtenga la mejor predicción promedio del salario, tendrá un premio monetario de <b>1000 MXN</b>.</p>
-      <p></p>
-      <b>En promedio ¿Cuánto cree que ganaron sus 5 compañeros más cercanos y su jefe en febrero de 2020?</b>
+      <p>En la pregunta anterior respondió cuánto cree que ganen sus compañeros. Ahora nos gustaría saber en promedio, </p>
+      <b>{FRASES[RANDINT]}</b>
       <p></p>
       <div>
       <b>Jefe: {values.personasCercanas.nom_jefe} </b>
@@ -42,4 +43,4 @@ function Adivina1() {
   )
 }
 
-export default Adivina1
+export default AdivinaOracion

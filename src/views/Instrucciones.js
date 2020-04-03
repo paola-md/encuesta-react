@@ -11,6 +11,7 @@ import { DIVISIONES } from './../constants';
 
 function Instrucciones() {
   const { values } = useFormikWizard()
+
   return (
     <div>
       <h1>Encuesta de salarios de la CDMX</h1>
@@ -24,6 +25,7 @@ function Instrucciones() {
           options={DIVISIONES}
           textFieldProps={{ fullWidth: true, margin: 'normal', variant: 'outlined' }}
         />
+
 
       </div>
 
