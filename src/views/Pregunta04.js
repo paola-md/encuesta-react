@@ -5,7 +5,7 @@ import { Formik, Form, Field,FastField, useFormikContext } from "formik";
 
 
 
-function Pregunta4() {
+function Pregunta04() {
   const { values } = useFormikWizard()
 
   return (
@@ -30,4 +30,4 @@ function Pregunta4() {
   )
 }
 
-export default Pregunta4
+export default Pregunta04

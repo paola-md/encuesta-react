@@ -3,8 +3,12 @@ import React from 'react'
 import ReactDOM from "react-dom";
 import "./styles.css";
 import "./styles-custom.css";
+import "./App.css";
 
 import steps from './steps'
+
+
+
 
 function FormWrapper({
   children,
@@ -27,7 +31,7 @@ function FormWrapper({
           Anterior
         </button>
         <button type="submit">
-          {actionLabel || (isLastStep ? 'Submit' : 'Siguiente')}
+          {actionLabel || (isLastStep ? 'Finalizar' : 'Siguiente')}
         </button>
       </div>
       <hr />
@@ -41,7 +45,7 @@ function App() {
     console.log('full values:', values)
 
     return {
-      message: 'Thanks for submitting!',
+      message: 'Gracias por la respuesta',
     }
   }, [])
 

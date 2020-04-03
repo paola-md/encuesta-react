@@ -6,9 +6,8 @@ function CompanyInfo() {
 
   return (
     <div>
-      <h1>Is this information correct?</h1>
-      <p>User name: {values.adivinaOracion.frase}</p>
-      <p>Company name: {values.company.companyName}</p>
+      <h1>Fin de la encuesta</h1>
+      <p>Gracias por participar. En una semana les haremos llegar el premio (?)</p>
     </div>
   )
 }

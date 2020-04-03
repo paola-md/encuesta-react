@@ -3,35 +3,26 @@ import { TextField, Slider,Typography } from '@material-ui/core';
 import { fieldToTextField } from 'formik-material-ui';
 import { makeStyles } from '@material-ui/core/styles';
 
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
+
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 300,
     justifyContent:'center',
     alignItems:'center',
   },
   margin: {
-    height: theme.spacing(3),
-    width: theme.spacing(10),
+    height: theme.spacing(1),
+    width: theme.spacing(1),
   },
 }));
 
 
-const marks = [
-  {
-    value: 0,
-    label: 'Nada seguro',
-  },
-  {
-    value: 100,
-    label: 'Seguro',
-  },
-];
 
-function valuetext(value) {
-  return `${value} MXN`;
-}
-
-const ProbSlider = ({ textFieldProps, ...props }) => {
+const RadioBinary = ({ textFieldProps, ...props }) => {
   const classes = useStyles();
   const { form: { setTouched, setFieldValue } } = props;
   const { error, helperText, ...field } = fieldToTextField(props);
@@ -39,26 +30,25 @@ const ProbSlider = ({ textFieldProps, ...props }) => {
 
   return (
     <div className={classes.root}>
-      <Typography id="discrete-slider-custom" gutterBottom>
-      Probabilidad
-      </Typography>
-      <Slider
+
+      <FormControl component="fieldset">
+     <RadioGroup
+     row
         {...props}
         {...field}
-        defaultValue={50}
-        getAriaValueText={valuetext}
-        aria-labelledby="discrete-slider-custom"
-        step={10}
-        min = {0}
-        valueLabelDisplay="auto"
-        marks={marks}
+        aria-label="gender"
         onChange={ (_, value) => setFieldValue(name, value) }
         onBlur={ () => setTouched({ [name]: true }) }
-      />
-     </div>
+      >
+      <FormControlLabel value="si" control={<Radio />} label="Sí" />
+      <FormControlLabel value="no" control={<Radio />} label="No" />
+
+  </RadioGroup>
+  </FormControl>
+    </div>
   );
 }
 
 
 
-export default ProbSlider;
+export default RadioBinary;

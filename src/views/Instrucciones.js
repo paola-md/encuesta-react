@@ -26,7 +26,6 @@ function Instrucciones() {
           textFieldProps={{ fullWidth: true, margin: 'normal', variant: 'outlined' }}
         />
 
-
       </div>
 
 
